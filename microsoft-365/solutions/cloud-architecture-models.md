@@ -10,7 +10,7 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
-- M365solutions
+- M365solution
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
 ---
