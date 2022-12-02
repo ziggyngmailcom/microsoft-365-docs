@@ -18,7 +18,7 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 05/20/2022
+ms.date: 12/02/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.subservice: mde
 search.appverid: met150
@@ -46,6 +46,8 @@ To resolve this issue, take the following steps:
 
 Certain exclusions for Defender for Endpoint must be defined in your existing non-Microsoft endpoint protection solution. Make sure to add the following exclusions:
 
+**Windows 10 & 11**
+
 `C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`
 
 `C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`
@@ -55,6 +57,21 @@ Certain exclusions for Defender for Endpoint must be defined in your existing no
 `C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`
 
 `C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe`
+
+
+**Windows Server 2012 R2, 2016, 2019, and 2022**
+
+`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\MsSense.exe`
+
+`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCnCProxy.exe`
+
+`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseIR.exe`
+
+`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCE.exe`
+
+`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseSampleUploader.exe`
+
+`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCM.exe`
 
 ### Set Microsoft Defender Antivirus to passive mode manually
 
